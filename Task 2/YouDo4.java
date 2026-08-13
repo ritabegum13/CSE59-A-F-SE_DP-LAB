@@ -1,1 +1,23 @@
 
+public class YouDo4 {
+
+    public static void main(String[] args) {
+
+        Sensor sensor = new Sensor();
+
+        sensor.charge();
+
+        System.out.println("Battery Level: " + sensor.batteryLevel);
+    }
+}
+
+class Sensor {
+
+    String name;
+    int batteryLevel;
+
+    public void charge() {
+        batteryLevel = 100;
+        System.out.println("Sensor fully charged");
+    }
+}
