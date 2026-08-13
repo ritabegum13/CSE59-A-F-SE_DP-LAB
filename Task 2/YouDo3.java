@@ -1,4 +1,12 @@
-public class Countdown {
+public class YouDo3 {
+
+    public static void main(String[] args) {
+        Countdown countdown = new Countdown();
+        countdown.start();
+    }
+}
+
+class Countdown {
 
     public void start() {
         for (int i = 5; i >= 1; i--) {
@@ -6,14 +14,5 @@ public class Countdown {
         }
 
         System.out.println("Go!");
-    }
-}
-public class Main {
-
-    public static void main(String[] args) {
-
-        Countdown countdown = new Countdown();
-
-        countdown.start();
     }
 }
